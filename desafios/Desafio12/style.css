@@ -4,21 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
-}
-
 :root {
     --fonte1: verdana, geneva, tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 header > h1 {
     padding-top: 50px;
     font-family: var(--fonte2);
-    font-size: 2.5em;
+    font-size: 10vw;
     font-weight: normal;
     font-variant: small-caps;
 }
@@ -56,11 +57,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-}
-
-section#img01 {
-    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
-    background-position: right center;
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -77,12 +74,19 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.437);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.477);
 }
 
-section > p{
+section > p {
     padding-bottom: 2em;;
+}
+
+section#img01 {
+    background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
+    background-position: right center;
 }
 
 section#img02 {
