@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,29 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +66,11 @@
     -->
 
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +185,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>217.000.000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero nemo modi quisquam excepturi, ab doloribus cupiditate aut ipsam dicta omnis nisi, iure quae amet molestias voluptas sequi voluptatum cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem cumque fugiat aperiam necessitatibus unde explicabo quasi esse natus autem architecto rem commodi, consequatur amet, distinctio fugit asperiores, sint quia praesentium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores, minima quod atque numquam doloribus iste, adipisci id dolorem, iusto aliquam. Maiores voluptatum laudantium quia architecto labore est ipsum aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod sit rem ea. Magni optio nemo minus laborum sed nobis voluptatibus iusto rerum ipsam. Earum ex repudiandae voluptatum praesentium? Maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae nemo ipsam architecto voluptatem voluptatibus, debitis dicta quo minus? Adipisci nostrum eveniet neque ut repellendus provident cupiditate dolore sunt omnis!</p>
 </body>
 </html>
